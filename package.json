@@ -1,0 +1,32 @@
+{
+  "name": "express_blog",
+  "version": "1.0.0",
+  "description": "express project",
+  "author": "yanzongzhen <2023335616@qq.com>",
+  "private": true,
+  "scripts": {
+    "server": "nodemon ./server/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "mysql2": "^1.6.1",
+    "nodemon": "^1.18.3",
+    "path": "^0.12.7",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  },
+  "main": "app.js",
+  "keywords": [
+    "express"
+  ],
+  "license": "MIT"
+}
