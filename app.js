@@ -4,7 +4,7 @@ var cors = require("cors");
 var AuthRouter = require("./controllers/authController");
 var UserRouter = require("./controllers/userController");
 var ArticleRouter = require("./controllers/articleController");
-var CommonRouter = require("./controllers/CommonController");
+var CommonRouter = require("./controllers/commonController");
 var authMethod = require("./libs/AuthMethod");
 var app = express();
 
