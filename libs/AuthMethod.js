@@ -69,6 +69,7 @@ const logout = async function(sid) {
     return true;
 };
 
+const current_user = null;
 
 exports.login = login;
 exports.logout = logout;
@@ -77,3 +78,5 @@ exports.get_user = get_user;
 exports.gen_password = gen_password;
 exports.verify_password = verify_password;
 exports.set_session = set_session;
+exports.current_user = current_user;
+

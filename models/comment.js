@@ -37,6 +37,11 @@ module.exports = function(sequelize, DataTypes) {
           name: "comment_articleId",
           method: "BTREE",
           fields: ["article_id"]
+        },
+        {
+          name: "comment_userId",
+          method: "BTREE",
+          fields: ["user_id"]
         }
       ]
     }

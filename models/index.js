@@ -11,6 +11,10 @@ User.hasMany(Articles, {
   foreignKey: "author_id",
   targetKey: "id"
 });
+User.hasMany(Comments, {
+    foreignKey: "user_id",
+    targetKey: "id"
+});
 Articles.hasMany(Comments, {
   foreignKey: "article_id",
   targetKey: "id"
@@ -19,11 +23,6 @@ Articles.belongsTo(PostStatus,{
   foreignKey: 'post_status',
   targetKey: 'id'
 });
-Articles.belongsTo(Tags, {
-  foreignKey: 'tags',
-  targetKey: 'id'
-});
-
 // 同步模型到数据库中
 // sequelize.sync();
 // sequelize.drop({force: true});

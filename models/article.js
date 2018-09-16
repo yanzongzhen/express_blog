@@ -20,7 +20,7 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       },
       tags: {
-        type: DataTypes.INTEGER
+        type: DataTypes.STRING(255)
       },
       post_status: {
         type: DataTypes.INTEGER,
